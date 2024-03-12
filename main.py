@@ -64,8 +64,8 @@ if __name__ == "__main__":
             try:
                 nombre = input("Ingrese el nuevo nombre del producto (deje en blanco para no modificar): ")
                 descripcion = input("Ingrese la nueva descripción del producto (deje en blanco para no modificar): ")
-                cantidad = input("Ingrese la nueva cantidad del producto (deje en blanco para no modificar): ")
-                precio = input("Ingrese el nuevo precio del producto (deje en blanco para no modificar): ")
+                cantidad = int(input("Ingrese la nueva cantidad del producto (deje en blanco para no modificar): "))
+                precio = int(input("Ingrese el nuevo precio del producto (deje en blanco para no modificar): "))
                 
                 inventario.actualizar_producto(id_producto, nombre, descripcion, cantidad, precio)
                 input("\nPulse para volver al menu... ")
